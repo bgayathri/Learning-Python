@@ -1,0 +1,37 @@
+2016-10-26 16:13:27,197 - teradata.udaexec - INFO - Initializing UdaExec...
+2016-10-26 16:13:27,198 - teradata.udaexec - INFO - Reading config files: ['/etc/udaexec.ini: Not Found', '/Users/vro173/udaexec.ini: Not Found', '/Users/vro173/Documents/Python_programs/udaexec.ini: Not Found']
+2016-10-26 16:13:27,198 - teradata.udaexec - INFO - Found run number file: "/Users/vro173/Documents/Python_programs/.runNumber"
+2016-10-26 16:13:27,198 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2016-10-26 16:13:27,198 - teradata.udaexec - INFO - Removed 0 log files.
+2016-10-26 16:13:27,242 - teradata.udaexec - INFO - Checkpoint file not found: /Users/vro173/Documents/Python_programs/HelloWorld.checkpoint
+2016-10-26 16:13:27,243 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2016-10-26 16:13:27,243 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: HelloWorld
+ *          Version: 1.0
+ *       Run Number: 20161026161327-35
+ *             Host: acbc32a00557
+ *         Platform: Darwin-15.6.0-x86_64-i386-64bit
+ *          OS User: vro173
+ *   Python Version: 3.5.2
+ *  Python Compiler: GCC 4.2.1 Compatible Apple LLVM 4.2 (clang-425.0.28)
+ *     Python Build: ('default', 'Jul  2 2016 17:52:12')
+ *  UdaExec Version: 15.10.0.20
+ *     Program Name: classify_tables.py
+ *      Working Dir: /Users/vro173/Documents/Python_programs
+ *          Log Dir: /Users/vro173/Documents/Python_programs/logs
+ *         Log File: /Users/vro173/Documents/Python_programs/logs/HelloWorld.20161026161327-35.log
+ *     Config Files: ['/etc/udaexec.ini: Not Found', '/Users/vro173/udaexec.ini: Not Found', '/Users/vro173/Documents/Python_programs/udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=HelloWorld;Version=1.0;JobID=20161026161327-35;ClientUser=vro173;Production=False;udaAppLogFile=/Users/vro173/Documents/Python_programs/logs/HelloWorld.20161026161327-35.log;UtilityName=PyTd;UtilityVersion=15.10.0.20
+********************************************************************************/
+2016-10-26 16:13:27,250 - teradata.udaexec - INFO - Creating connection: {'password': 'XXXXXX', 'system': 'oneview', 'username': 'vro173', 'method': 'odbc'}
+2016-10-26 16:13:27,250 - teradata.tdodbc - INFO - Loading ODBC Library: libiodbc.dylib
+2016-10-26 16:13:27,256 - teradata.tdodbc - INFO - Available drivers: Amazon Redshift, MapR Drill ODBC Driver, MySQL ODBC 5.3 ANSI Driver, MySQL ODBC 5.3 Unicode Driver, PostgreSQL Unicode, Simba SQL Server ODBC Driver, Teradata
+2016-10-26 16:13:27,611 - teradata.udaexec - INFO - Connection successful. Duration: 0.361 seconds. Details: {'password': 'XXXXXX', 'system': 'oneview', 'username': 'vro173', 'method': 'odbc'}
+2016-10-26 16:13:29,081 - teradata.udaexec - ERROR - Uncaught exception
+Traceback (most recent call last):
+  File "classify_tables.py", line 16, in <module>
+    fname = input("Enter file name: ")
+KeyboardInterrupt
+2016-10-26 16:13:29,082 - teradata.tdodbc - WARNING - 1 open connections found on exit, attempting to close...
+2016-10-26 16:13:29,140 - teradata.udaexec - INFO - UdaExec exiting.
